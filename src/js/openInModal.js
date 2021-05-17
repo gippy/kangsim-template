@@ -1,17 +1,16 @@
 let modal = null;
 
 function setInnerHTML(parent, html) {
+    parent.innerHTML = '';
     parent.innerHTML = html;
-    Array.from(parent.querySelectorAll("script")).forEach((oldScript) => {
-        const newScript = document.createElement("script");
-        Array.from(oldScript.attributes).forEach( attr => newScript.setAttribute(attr.name, attr.value) );
-        newScript.appendChild(document.createTextNode(oldScript.innerHTML));
-        oldScript.parentNode.replaceChild(newScript, oldScript);
+    const scripts = parent.querySelectorAll('script');
+    scripts.forEach((script) => {
+        console.log(script);
+        eval(script.innerHTML);
     });
 }
 
-async function openInModal(event) {
-    const link = event.target;
+async function openInModal(event, link) {
     // Do not open links to pages that should open in new window in modal
     if (link.target === '_blank') return;
 
@@ -42,7 +41,7 @@ async function openInModal(event) {
     setInnerHTML(modalContentElement, content);
     // If the new modal content contains links, ensure that they also open in this modal
     modalContentElement.querySelectorAll('a').forEach((link) => {
-        link.addEventListener('click', openInModal);
+        link.addEventListener('click', (event) => openInModal(event, link));
     })
     modal.show();
 }
@@ -50,6 +49,6 @@ async function openInModal(event) {
 window.addEventListener('load', () => {
     modal = new bootstrap.Modal(document.getElementById('page-content-modal'), {});
     document.querySelectorAll('a').forEach((link) => {
-        link.addEventListener('click', openInModal);
+        link.addEventListener('click', (event) => openInModal(event, link));
     });
 });
