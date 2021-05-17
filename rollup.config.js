@@ -21,7 +21,7 @@ const watcher = (globs) => ({
 export default {
     input: 'src/js/main.js',
     output: {
-        file: 'dist/main.js',
+        file: 'docs/main.js',
         format: 'iife'
     },
     watch: {
@@ -30,7 +30,7 @@ export default {
     plugins: [
         scss({
             output: true,
-            output: 'dist/main.css',
+            output: 'docs/main.css',
             processor: () => postcss([autoprefixer({})]),
             watch: 'src/scss',
         }),
@@ -39,27 +39,27 @@ export default {
             targets: [
                 {
                     src: 'src/index.html',
-                    dest: 'dist/'
+                    dest: 'docs/'
                 },
                 {
                     src: 'src/prihlaseni.html',
-                    dest: 'dist/'
+                    dest: 'docs/'
                 },
                 {
                     src: 'src/nejaky-jiny-obsah.html',
-                    dest: 'dist/'
+                    dest: 'docs/'
                 },
                 {
                     src: 'src/fonts/**/*',
-                    dest: 'dist/fonts'
+                    dest: 'docs/fonts'
                 },
                 {
                     src: 'src/favicon/**/*',
-                    dest: 'dist'
+                    dest: 'docs'
                 },
                 {
                     src: 'src/images/**/*',
-                    dest: 'dist/images'
+                    dest: 'docs/images'
                 }
             ]
         }),
@@ -67,10 +67,10 @@ export default {
             open: true,
             host: 'localhost',
             port: 3333,
-            contentBase: './dist',
+            contentBase: './docs',
         }),
         livereload({
-            watch: 'dist',
+            watch: 'docs',
             verbose: false, // Disable console output
         })
     ],
