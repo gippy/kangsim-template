@@ -1,0 +1,423 @@
+@font-face {
+  font-family: 'League Spartan Variable';
+  src: url("/fonts/LeagueSpartanVariable.woff2") format("woff2-variations");
+  font-weight: 200 900; }
+
+body {
+  font-family: 'League Spartan Variable', Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  background: #0d273a;
+  background: linear-gradient(180deg, #0d273a 0%, #127f9d 65%, #1283a2 74%, #0d273a 94%, #2f1e14 100%);
+  color: white;
+  font-weight: 500; }
+
+img {
+  max-width: 100%; }
+
+a {
+  color: white;
+  font-weight: bold;
+  transition: color 100ms ease-in-out;
+  text-decoration: none; }
+  a:hover, a:active {
+    color: #148CAC; }
+
+nav > div {
+  position: relative; }
+
+nav .kangsim-hangul {
+  display: none; }
+
+nav.navbar-dark .navbar-nav .nav-link {
+  color: white; }
+  nav.navbar-dark .navbar-nav .nav-link:hover, nav.navbar-dark .navbar-nav .nav-link:active {
+    color: #148CAC; }
+
+nav .navbar-brand img {
+  height: 5rem; }
+
+nav .navbar-collapse {
+  justify-content: flex-start;
+  gap: 1rem; }
+
+nav .nav-link {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem 0.25rem 0.5rem !important;
+  transition: color 100ms ease-in-out; }
+
+nav .navbar-nav.social {
+  flex-direction: row;
+  gap: 2rem; }
+
+nav .social .nav-link {
+  padding-top: 0.5rem !important; }
+
+nav .social img {
+  height: 1.5rem; }
+
+nav .sign-in {
+  justify-self: end;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  nav .sign-in a {
+    background-color: #148CAC;
+    border-radius: 0.8rem;
+    transition: background-color 100ms ease-in-out; }
+    nav .sign-in a:hover, nav .sign-in a:active {
+      background-color: #0f677e;
+      color: white; }
+
+@media screen and (min-width: 840px) {
+  nav .kangsim-hangul {
+    display: block;
+    position: absolute;
+    left: 2rem;
+    top: 7rem;
+    height: 12rem; } }
+
+@media screen and (min-width: 992px) {
+  nav .navbar-nav.social {
+    flex-direction: row;
+    gap: 0; }
+  nav .social img {
+    height: 1rem; }
+  nav .sign-in {
+    justify-self: end;
+    justify-content: flex-start;
+    align-items: center; } }
+
+@media screen and (min-width: 1200px) {
+  nav .navbar-collapse {
+    gap: 1.5rem; }
+  nav .navbar-brand img {
+    height: 5rem; }
+  nav .nav-link {
+    font-size: 1.1rem;
+    padding: 1rem 0.5rem 0.5rem !important; }
+  nav .social .nav-link {
+    padding-top: 0.7rem !important; }
+  nav .social img {
+    height: 1rem; }
+  nav .sign-in {
+    justify-self: end; }
+    nav .sign-in a {
+      background-color: #148CAC;
+      border-radius: 0.8rem;
+      transition: background-color 100ms ease-in-out; }
+      nav .sign-in a:hover, nav .sign-in a:active {
+        background-color: #0f677e;
+        color: white; } }
+
+@media screen and (min-width: 1400px) {
+  nav .navbar-collapse {
+    gap: 2rem; }
+  nav .navbar-brand img {
+    height: 6rem; }
+  nav .nav-link {
+    font-size: 1.3rem;
+    padding: 1rem 0.5rem 0.5rem !important; }
+  nav .social .nav-link {
+    padding-top: 0.5rem !important; }
+  nav .social img {
+    height: 1.5rem; }
+  nav .sign-in {
+    justify-self: end; }
+    nav .sign-in a {
+      background-color: #148CAC;
+      border-radius: 0.8rem;
+      transition: background-color 100ms ease-in-out; }
+      nav .sign-in a:hover, nav .sign-in a:active {
+        background-color: #0f677e;
+        color: white; } }
+
+section {
+  position: relative;
+  text-align: center;
+  overflow: visible; }
+  section .stroke-wrapper {
+    display: none; }
+  @media screen and (min-width: 992px) {
+    section .stroke-wrapper {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top: 0;
+      width: calc(100vw - 2rem);
+      height: 100%;
+      overflow: hidden; }
+    section .stroke {
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 105% !important;
+      width: 105% !important;
+      height: auto !important; } }
+  section:nth-of-type(1) {
+    margin-top: 2rem; }
+  section:not(:nth-of-type(1)) {
+    margin-top: 9rem; }
+  section h2 {
+    font-size: 3.2rem;
+    margin-bottom: 2rem; }
+  section h3 {
+    font-size: 3rem;
+    margin-bottom: 1.8rem; }
+  section .dark-container {
+    background-color: #001A2D;
+    padding: 1rem;
+    height: 100%; }
+  section .light-container {
+    background-color: #FFFFFF;
+    color: black;
+    padding: 1rem;
+    height: 100%; }
+  section ul {
+    list-style-type: none;
+    padding-left: 0; }
+  section .nav-pills {
+    gap: 2rem; }
+    section .nav-pills a.nav-link {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: white;
+      background-color: #148CAC;
+      transition: background-color 100ms ease-in-out;
+      border-radius: 0;
+      padding: 0.8rem 1rem 0.5rem; }
+      section .nav-pills a.nav-link:hover {
+        background-color: #0f677e;
+        color: white; }
+
+.uvod h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 3rem; }
+
+.uvod aside {
+  display: none; }
+
+.uvod .col-lg-3 {
+  position: relative; }
+
+.uvod .responsive-video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; }
+  .uvod .responsive-video iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+
+@media screen and (min-width: 992px) {
+  .uvod aside {
+    display: block; } }
+
+.o-nas img {
+  height: 4rem; }
+
+.o-nas h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem; }
+
+.o-nas p {
+  font-weight: 500; }
+
+.o-nas .row > div {
+  padding: 1rem 2rem; }
+
+.aktualne .novinky {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem; }
+
+.aktualne .hlavni-novinka {
+  margin-bottom: 2rem; }
+  .aktualne .hlavni-novinka p {
+    text-align: left; }
+
+.aktualne .posouvaci-novinky .posouvaci-novinky-ovladani {
+  align-self: center; }
+
+.aktualne .posouvaci-novinky .posouvaci-novinky-obsah {
+  overflow: hidden; }
+  .aktualne .posouvaci-novinky .posouvaci-novinky-obsah .row {
+    flex-wrap: nowrap; }
+  .aktualne .posouvaci-novinky .posouvaci-novinky-obsah .col-lg-4 {
+    border-right: 1px solid white; }
+
+.aktualne .posouvaci-novinky button {
+  background-color: transparent;
+  border: none; }
+  .aktualne .posouvaci-novinky button img {
+    width: 2rem; }
+  .aktualne .posouvaci-novinky button img.next {
+    transform: rotate(180deg); }
+
+.aktualne .kalendar-akci h4 {
+  border-bottom: 1px solid white;
+  padding-bottom: 1rem; }
+
+.aktualne .kalendar-akci li {
+  margin: 1.5rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 1rem; }
+  .aktualne .kalendar-akci li p:last-child {
+    margin-bottom: 0; }
+
+.aktualne .kalendar-akci li:last-child {
+  border-bottom: none; }
+
+.taekwondo ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; }
+
+.taekwondo li {
+  position: relative;
+  flex: 1 1 20%; }
+
+.taekwondo li a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 50, 50, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem 1rem; }
+
+.taekwondo h4 {
+  font-size: 2.3rem; }
+
+@media screen and (min-width: 992px) {
+  .taekwondo ul {
+    flex-direction: row;
+    flex-wrap: nowrap; } }
+
+.treninky table {
+  margin-bottom: 0; }
+  .treninky table th {
+    color: white;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .treninky table td {
+    color: white;
+    vertical-align: middle; }
+
+.treninky .side-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.treninky .clenske-prispevky {
+  font-size: 1.5rem;
+  margin-top: 2rem; }
+  .treninky .clenske-prispevky a {
+    background-color: #001A2D;
+    padding: 1rem 2rem; }
+
+.kontakt img {
+  height: 4rem;
+  margin-bottom: 2rem; }
+
+.kontakt .dark-container > .row > div {
+  border-bottom: 1px solid white;
+  padding: 2rem; }
+  .kontakt .dark-container > .row > div:last-child {
+    border-bottom: 0; }
+
+@media screen and (min-width: 992px) {
+  .kontakt .dark-container > .row > div {
+    border-bottom: 0;
+    padding: 0rem; }
+  .kontakt .dark-container > .row > div > div:last-child {
+    border-right: 1px solid white; }
+  .kontakt .dark-container > .row > div:last-child > div:last-child {
+    border-right: 0; } }
+
+.mapa {
+  width: 100%;
+  overflow: hidden; }
+  .mapa .google-map {
+    position: relative;
+    width: 100%;
+    padding-top: 35%; }
+    .mapa .google-map iframe {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%; }
+
+.partneri {
+  padding-bottom: 15rem; }
+  .partneri h2 {
+    margin-bottom: 1.5rem; }
+  .partneri .important-link {
+    padding-bottom: 2rem; }
+    .partneri .important-link a {
+      display: inline-block;
+      background-color: #148CAC;
+      color: #001A2D;
+      padding: 0.8rem 2rem 0.3rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      transition: color 100ms ease-in-out, background-color 100ms ease-in-out; }
+      .partneri .important-link a:hover, .partneri .important-link a:active {
+        background-color: #19b1da; }
+  .partneri .light-container {
+    padding-bottom: 3rem; }
+    .partneri .light-container h3 {
+      padding-top: 2rem; }
+    .partneri .light-container ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem; }
+    .partneri .light-container li {
+      display: block; }
+    .partneri .light-container img {
+      height: 6rem; }
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.modal .modal-dialog .modal-content {
+  position: relative;
+  border: 1rem solid #001A2D;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  color: black;
+  min-height: 10rem; }
+  .modal .modal-dialog .modal-content a {
+    color: black; }
+  .modal .modal-dialog .modal-content .btn-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 3px solid #001A2D;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: white;
+    opacity: 1;
+    border-top: 0;
+    border-right: 0; }
+    .modal .modal-dialog .modal-content .btn-close:hover {
+      opacity: 0.8; }

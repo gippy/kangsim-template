@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293.21 451.23">
+    <defs>
+        <style>
+            .a,
+            .b {
+                fill: #fff;
+                stroke: #fff;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 1.23px;
+            }
+
+            .b {
+                fill-rule: evenodd;
+            }
+        </style>
+    </defs>
+    <circle class="a" cx="146.61" cy="411.78" r="38.83" />
+    <path class="b"
+        d="M256,31c80.58,0,146,60.24,146,134.39S336.58,299.77,256,299.77,110,239.61,110,165.39,175.43,31,256,31Zm0,63.35c42.58,0,77.15,31.88,77.15,71s-34.57,71-77.15,71-77.15-31.8-77.15-71S213.42,94.35,256,94.35Z"
+        transform="translate(-109.4 -30.39)" />
+    <path class="b" d="M110,165.39,217.18,442.17h77.65L402,165.39l-68.84,71-116,21.83Z"
+        transform="translate(-109.4 -30.39)" />
+</svg>

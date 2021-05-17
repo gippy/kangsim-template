@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451.32 453.12">
+    <defs>
+        <style>
+            .a {
+                fill: #fff;
+                stroke: #fff;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 1.32px;
+                fill-rule: evenodd;
+            }
+        </style>
+    </defs>
+    <path class="a"
+        d="M183.36,54.65s54.92,66.34,17.57,99.29c0,0-35.14,65.9,19.77,96.65l68.65,56.94s43.93,48.32,85.67,1.05c0,0,43.93-30.75,73.59,19.77,0,0,83.47,67-17.58,136.19,0,0-57.11,49.47-194.4-18.62,0,0-131.8-73.72-165.84-149.46,0,0-62.61-100.26-30.76-173.71l58.21-81s34.05-22,61.51-5.54Z"
+        transform="translate(-30.34 -29.44)" />
+</svg>

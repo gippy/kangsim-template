@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 458.2 254.36">
+    <defs>
+        <style>
+            .a,
+            .b {
+                fill: none;
+                stroke: #fff;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+            }
+
+            .a {
+                stroke-width: 8.2px;
+            }
+
+            .b {
+                stroke-width: 10.84px;
+            }
+        </style>
+    </defs>
+    <rect class="a" x="4.1" y="77.3" width="450" height="162.7" />
+    <rect class="a" x="189.79" y="158.62" width="94.96" height="91.63" />
+    <rect class="b" x="183.74" y="142" width="107.05" height="16.63" />
+    <rect class="a" x="188.58" y="77.3" width="94.96" height="64.72" />
+    <rect class="a" x="284.75" y="221.84" width="169.35" height="18.15" />
+    <rect class="a" x="4.1" y="221.84" width="185.69" height="18.15" />
+    <rect class="a" x="200.07" y="221.84" width="71.97" height="18.15" />
+    <rect class="a" x="204.3" y="172.85" width="63.51" height="48.99" />
+    <rect class="a" x="222.14" y="172.85" width="27.82" height="48.99" />
+    <rect class="a" x="204.3" y="76.69" width="63.51" height="16.94" />
+    <rect class="a" x="212.77" y="93.63" width="46.57" height="48.39" />
+    <rect class="a" x="197.35" y="128.68" width="77.42" height="13.31" />
+    <rect class="a" x="120.23" y="24.06" width="231.65" height="53.23" />
+    <rect class="a" x="30.11" y="103.9" width="36.9" height="31.45" />
+    <rect class="a" x="30.11" y="169.83" width="36.9" height="31.45" />
+    <rect class="a" x="83.34" y="169.83" width="36.9" height="31.45" />
+    <rect class="a" x="135.35" y="169.83" width="36.9" height="31.45" />
+    <rect class="a" x="83.34" y="103.9" width="36.9" height="31.45" />
+    <rect class="a" x="135.35" y="103.9" width="36.9" height="31.45" />
+    <rect class="a" x="298.05" y="103.9" width="36.9" height="31.45" />
+    <rect class="a" x="298.05" y="169.83" width="36.9" height="31.45" />
+    <rect class="a" x="351.28" y="169.83" width="36.9" height="31.45" />
+    <rect class="a" x="403.29" y="169.83" width="36.9" height="31.45" />
+    <rect class="a" x="351.28" y="103.9" width="36.9" height="31.45" />
+    <rect class="a" x="403.29" y="103.9" width="36.9" height="31.45" />
+    <rect class="a" x="139.58" y="40.4" width="50.2" height="24.19" />
+    <rect class="a" x="210.05" y="40.4" width="50.2" height="24.19" />
+    <rect class="a" x="280.81" y="40.4" width="50.2" height="24.19" />
+    <path class="a" d="M191.58,169.21v24.21" transform="translate(-26.9 -128.82)" />
+    <path class="a" d="M262.05,169.21v24.21" transform="translate(-26.9 -128.82)" />
+    <path class="a" d="M332.81,169.21v24.21" transform="translate(-26.9 -128.82)" />
+    <path class="a" d="M481,206.12l-123.08-73.2H166.49c.6,0-135.49,73.2-135.49,73.2"
+        transform="translate(-26.9 -128.82)" />
+</svg>

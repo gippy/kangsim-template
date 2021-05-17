@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470.46 216.46">
+    <defs>
+        <style>
+            .a {
+                fill: none;
+                stroke: #fff;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 20.46px;
+            }
+        </style>
+    </defs>
+    <circle class="a" cx="75.56" cy="75.56" r="65.33" />
+    <circle class="a" cx="235.88" cy="75.56" r="65.33" />
+    <circle class="a" cx="156.38" cy="140.9" r="65.33" />
+    <circle class="a" cx="394.9" cy="75.56" r="65.33" />
+    <circle class="a" cx="318.65" cy="140.9" r="65.33" />
+    <circle class="a" cx="75.56" cy="75.56" r="65.33" />
+    <circle class="a" cx="235.88" cy="75.56" r="65.33" />
+    <circle class="a" cx="156.38" cy="140.9" r="65.33" />
+    <circle class="a" cx="394.9" cy="75.56" r="65.33" />
+    <circle class="a" cx="318.65" cy="140.9" r="65.33" />
+</svg>

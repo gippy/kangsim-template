@@ -1,0 +1,24 @@
+{
+    "name": "kangsim-template",
+    "version": "1.0.0",
+    "description": "Website template for kangsim.cz",
+    "main": "dest/index.html",
+    "scripts": {
+        "build": "node_modules/rollup/dist/bin/rollup -c rollup.config.js",
+        "dev": "node_modules/rollup/dist/bin/rollup -c rollup.config.js -w"
+    },
+    "author": "Jaroslav Hejlek",
+    "license": "ISC",
+    "dependencies": {
+        "autoprefixer": "^10.2.5",
+        "postcss": "^8.2.14",
+        "rollup": "^2.47.0",
+        "rollup-plugin-copy": "^3.4.0",
+        "rollup-plugin-copy-watch": "0.0.1",
+        "rollup-plugin-scss": "^2.6.1",
+        "rollup-plugin-serve": "^1.1.0"
+    },
+    "devDependencies": {
+        "rollup-plugin-livereload": "^2.0.0"
+    }
+}

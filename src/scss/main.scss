@@ -1,0 +1,607 @@
+@import './fonts.scss';
+
+$whiteBackground: #FFFFFF;
+$darkBackground: #001A2D;
+$lightBackground: #148CAC;
+
+body {
+    font-family: 'League Spartan Variable', Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    background: rgb(13,39,58);
+    background: linear-gradient(180deg, rgba(13,39,58,1) 0%, rgba(18,127,157,1) 65%, rgba(18,131,162,1) 74%, rgba(13,39,58,1) 94%, rgba(47,30,20,1) 100%);
+    color: white;
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    transition: color 100ms ease-in-out;
+    text-decoration: none;
+
+    &:hover, &:active {
+        color: $lightBackground;
+    }
+}
+
+nav {
+    & > div {
+        position: relative;
+    }
+    .kangsim-hangul {
+        display: none;
+    }
+    &.navbar-dark .navbar-nav .nav-link {
+        color: white;
+
+        &:hover, &:active {
+            color: $lightBackground;
+        }
+    }
+    .navbar-brand {
+        img {
+            height: 5rem;
+        }
+    }
+
+    .navbar-collapse {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+
+        padding: 1rem 0.25rem 0.5rem!important;
+        transition: color 100ms ease-in-out;
+    }
+
+    .navbar-nav.social {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .social {
+        .nav-link {
+            padding-top: 0.5rem!important;
+        }
+        img {
+            height: 1.5rem;
+        }
+    }
+
+    .sign-in {
+        justify-self: end;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        a {
+            background-color: $lightBackground;
+            border-radius: 0.8rem;
+            transition: background-color 100ms ease-in-out;
+
+            &:hover, &:active {
+                background-color: darken($lightBackground, 10%);
+                color: white;
+            }
+        }
+    }
+
+    @media screen and (min-width: 840px) {
+        .kangsim-hangul {
+            display: block;
+            position: absolute;
+            left: 2rem;
+            top: 7rem;
+            height: 12rem;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .navbar-nav.social {
+            flex-direction: row;
+            gap: 0;
+        }
+        .social {
+            img {
+                height: 1rem;
+            }
+        }
+        .sign-in {
+            justify-self: end;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .navbar-collapse {
+            gap: 1.5rem;
+        }
+
+        .navbar-brand {
+            img {
+                height: 5rem;
+            }
+        }
+
+        .nav-link {
+            font-size: 1.1rem;
+            padding: 1rem 0.5rem 0.5rem!important;
+        }
+
+        .social {
+            .nav-link {
+                padding-top: 0.7rem!important;
+            }
+            img {
+                height: 1rem;
+            }
+        }
+
+        .sign-in {
+            justify-self: end;
+
+            a {
+                background-color: $lightBackground;
+                border-radius: 0.8rem;
+                transition: background-color 100ms ease-in-out;
+
+                &:hover, &:active {
+                    background-color: darken($lightBackground, 10%);
+                    color: white;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1400px) {
+        .navbar-collapse {
+            gap: 2rem;
+        }
+        .navbar-brand {
+            img {
+                height: 6rem;
+            }
+        }
+
+        .nav-link {
+            font-size: 1.3rem;
+            padding: 1rem 0.5rem 0.5rem!important;
+        }
+
+        .social {
+            .nav-link {
+                padding-top: 0.5rem!important;
+            }
+            img {
+                height: 1.5rem;
+            }
+        }
+
+        .sign-in {
+            justify-self: end;
+
+            a {
+                background-color: $lightBackground;
+                border-radius: 0.8rem;
+                transition: background-color 100ms ease-in-out;
+
+                &:hover, &:active {
+                    background-color: darken($lightBackground, 10%);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+section {
+    position: relative;
+    text-align: center;
+    overflow: visible;
+
+    .stroke-wrapper {
+        display: none;
+    }
+
+    @media screen and (min-width: 992px) {
+        .stroke-wrapper {
+            display: block;
+            position: absolute;
+            z-index: -1;
+            left: 50%;
+            transform: translate(-50%, 0);
+            top: 0;
+            width: calc(100vw - 2rem);
+            height: 100%;
+            overflow: hidden;
+        }
+        .stroke {
+            position: absolute;
+            z-index: -1;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 105%!important;
+            width: 105%!important;
+            height: auto!important;
+        }
+    }
+
+    &:nth-of-type(1) {
+        margin-top: 2rem;
+    }
+
+    &:not(:nth-of-type(1)) {
+        margin-top: 9rem;
+    }
+
+
+    h2 {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+
+        font-size: 3rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .dark-container {
+        background-color: $darkBackground;
+        padding: 1rem;
+        height: 100%;
+    }
+
+    .light-container {
+        background-color: $whiteBackground;
+        color: black;
+        padding: 1rem;
+        height: 100%;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .nav-pills {
+        gap: 2rem;
+
+        a.nav-link {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: white;
+            background-color: $lightBackground;
+            transition: background-color 100ms ease-in-out;
+            border-radius: 0;
+            padding: 0.8rem 1rem 0.5rem;
+
+            &:hover {
+                background-color: darken($lightBackground, 10%);
+                color: white;
+            }
+        }
+    }
+}
+
+.uvod {
+    h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        margin-bottom: 3rem;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .col-lg-3 {
+        position: relative;
+    }
+
+    .responsive-video {
+        position: relative;
+        width: 100%;
+        padding-top:56.25%;
+
+        iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        aside {
+            display: block;
+        }
+    }
+}
+
+.o-nas {
+    img {
+        height: 4rem;
+    }
+
+    h4 {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-weight: 500;
+    }
+
+    .row > div {
+        padding: 1rem 2rem;
+    }
+}
+
+.aktualne {
+    .novinky {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 2rem;
+    }
+    .hlavni-novinka {
+        p {
+            text-align: left;
+        }
+        margin-bottom: 2rem;
+    }
+
+    .posouvaci-novinky {
+        .posouvaci-novinky-ovladani {
+            align-self: center;
+        }
+
+        .posouvaci-novinky-obsah {
+            overflow: hidden;
+            .row {
+                flex-wrap: nowrap;
+            }
+            .col-lg-4 {
+                border-right: 1px solid white;
+            }
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+
+            img {
+                width: 2rem;
+            }
+
+            img.next {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .kalendar-akci {
+        h4 {
+            border-bottom: 1px solid white;
+            padding-bottom: 1rem;
+        }
+        li {
+            margin: 1.5rem;
+            border-bottom: 1px solid white;
+            padding-bottom: 1rem;
+
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+    }
+
+}
+
+.taekwondo {
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    li {
+        position: relative;
+        flex: 1 1 20%;
+    }
+    li a {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(50,50,50, 0.4);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 1rem 1rem;
+    }
+    h4 {
+        font-size: 2.3rem;
+    }
+
+    @media screen and (min-width: 992px) {
+        ul {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.treninky {
+    table {
+        margin-bottom: 0;
+        th {
+            color: white;
+            vertical-align: middle;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        td {
+            color: white;
+            vertical-align: middle;
+        }
+    }
+    .side-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .clenske-prispevky {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+
+        a {
+            background-color: $darkBackground;
+            padding: 1rem 2rem;
+        }
+    }
+}
+
+.kontakt {
+    img {
+        height: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .dark-container > .row > div {
+        border-bottom: 1px solid white;
+        padding: 2rem;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        .dark-container > .row > div {
+            border-bottom: 0;
+            padding: 0rem;
+        }
+        .dark-container > .row > div > div:last-child {
+            border-right: 1px solid white;
+        }
+
+        .dark-container > .row > div:last-child > div:last-child {
+            border-right: 0;
+        }
+    }
+}
+
+.mapa {
+    width: 100%;
+    overflow: hidden;
+
+    .google-map {
+        position: relative;
+        width: 100%;
+        padding-top: 35%;
+
+        iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.partneri {
+    padding-bottom: 15rem;
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+    .important-link {
+        padding-bottom: 2rem;
+        a {
+            display: inline-block;
+            background-color: $lightBackground;
+            color: $darkBackground;
+            padding: 0.8rem 2rem 0.3rem;
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            transition: color 100ms ease-in-out, background-color 100ms ease-in-out;
+
+            &:hover, &:active {
+                background-color: lighten($lightBackground, 10%);
+            }
+        }
+    }
+    .light-container {
+        padding-bottom: 3rem;
+        h3 {
+            padding-top: 2rem;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+        }
+        li {
+            display: block;
+        }
+        img {
+            height: 6rem;
+        }
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            position: relative;
+            border: 1rem solid $darkBackground;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+            color: black;
+            min-height: 10rem;
+
+            a {
+                color: black;
+            }
+
+            .btn-close {
+                position: absolute;
+                right: 0;
+                top: 0;
+                border: 3px solid $darkBackground;
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 0;
+                color: white;
+                opacity: 1;
+                border-top: 0;
+                border-right: 0;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462.52 272.43">
+    <defs>
+        <style>
+            .a,
+            .b,
+            .c {
+                fill: none;
+                stroke: #fff;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+            }
+
+            .a {
+                stroke-width: 18.6px;
+            }
+
+            .b {
+                stroke-width: 12.52px;
+            }
+
+            .c {
+                stroke-width: 12.55px;
+            }
+        </style>
+    </defs>
+    <rect class="a" x="28.95" y="175.72" width="194.98" height="27.78" />
+    <rect class="b" x="111.16" y="137.75" width="30.56" height="37.97" />
+    <circle class="b" cx="223.93" cy="116.9" r="38.61" />
+    <path class="b" d="M230.65,233l13.87,15.89,22.16-24.45" transform="translate(-24.74 -119.78)" />
+    <path class="b"
+        d="M216.16,257.54H44a13,13,0,0,1-13-13V139a12.94,12.94,0,0,1,13-13H258.37a12.94,12.94,0,0,1,13,13v66.45a38.18,38.18,0,0,0-22.68-7.37,38.61,38.61,0,0,0-32.51,59.45Z"
+        transform="translate(-24.74 -119.78)" />
+    <path class="b" d="M248.67,198.09a38.14,38.14,0,0,0-27,11,38.62,38.62,0,0,0-11.65,27.37v.26H53.69V147.79h195Z"
+        transform="translate(-24.74 -119.78)" />
+    <path class="b" d="M414.39,173.79,219.72,368.07" transform="translate(-24.74 -119.78)" />
+    <path class="b" d="M427.65,248l13.87,15.89,22.16-24.45" transform="translate(-24.74 -119.78)" />
+    <circle class="c" cx="379.77" cy="251.36" r="5.97" />
+    <circle class="b" cx="421" cy="131.83" r="35.26" />
+    <path class="b" d="M411.39,259.61a35.43,35.43,0,0,0,23.31,25.52v73.05H374.32V259.61Z"
+        transform="translate(-24.74 -119.78)" />
+    <path class="b"
+        d="M410.55,249.31c-.05.78-.08,1.52-.08,2.3a35.27,35.27,0,0,0,35.19,35.26v86.94A12.12,12.12,0,0,1,433.52,386h-58a12.13,12.13,0,0,1-12.14-12.15V261.46a12.15,12.15,0,0,1,12.14-12.15Z"
+        transform="translate(-24.74 -119.78)" />
+</svg>
