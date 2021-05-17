@@ -50,7 +50,7 @@
         window.modal.show();
     }
 
-    window.addEventListener('load', (event) => {
+    window.addEventListener('load', () => {
         window.modal = new bootstrap.Modal(document.getElementById('page-content-modal'), {});
         document.querySelectorAll('a').forEach((link) => {
             link.addEventListener('click', openInModal);

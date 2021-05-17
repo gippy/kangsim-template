@@ -156,8 +156,7 @@ section {
       top: 50%;
       transform: translate(-50%, -50%);
       max-width: 105% !important;
-      width: 105% !important;
-      height: auto !important; } }
+      max-height: 150% !important; } }
   section:nth-of-type(1) {
     margin-top: 2rem; }
   section:not(:nth-of-type(1)) {
