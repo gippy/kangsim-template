@@ -5,7 +5,7 @@ function setInnerHTML(parent, html) {
     parent.innerHTML = html;
     const scripts = parent.querySelectorAll('script');
     scripts.forEach((script) => {
-        console.log(script);
+        // Dangerous, but only way to eval scripts loaded externally
         eval(script.innerHTML);
     });
 }
