@@ -519,6 +519,13 @@ section {
         .dark-container > .row > div:last-child > div:last-child {
             border-right: 0;
         }
+
+        .stroke-wrapper {
+            height: 110%;
+        }
+        .stroke {
+            max-height: 210%!important;
+        }
     }
 }
 

@@ -359,7 +359,11 @@ section {
   .kontakt .dark-container > .row > div > div:last-child {
     border-right: 1px solid white; }
   .kontakt .dark-container > .row > div:last-child > div:last-child {
-    border-right: 0; } }
+    border-right: 0; }
+  .kontakt .stroke-wrapper {
+    height: 110%; }
+  .kontakt .stroke {
+    max-height: 210% !important; } }
 
 .mapa {
   width: 100%;
