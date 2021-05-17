@@ -1,4 +1,4 @@
-window.modal = null;
+let modal = null;
 
 function setInnerHTML(parent, html) {
     parent.innerHTML = html;
@@ -44,11 +44,11 @@ async function openInModal(event) {
     modalContentElement.querySelectorAll('a').forEach((link) => {
         link.addEventListener('click', openInModal);
     })
-    window.modal.show();
+    modal.show();
 }
 
 window.addEventListener('load', () => {
-    window.modal = new bootstrap.Modal(document.getElementById('page-content-modal'), {});
+    modal = new bootstrap.Modal(document.getElementById('page-content-modal'), {});
     document.querySelectorAll('a').forEach((link) => {
         link.addEventListener('click', openInModal);
     });

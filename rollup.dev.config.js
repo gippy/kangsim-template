@@ -50,6 +50,10 @@ export default {
                     dest: 'docs/'
                 },
                 {
+                    src: 'src/dalsi-novinky.html',
+                    dest: 'docs/'
+                },
+                {
                     src: 'src/fonts/**/*',
                     dest: 'docs/fonts'
                 },

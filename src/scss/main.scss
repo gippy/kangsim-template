@@ -366,11 +366,16 @@ section {
 
         .posouvaci-novinky-obsah {
             overflow: hidden;
+
             .row {
                 flex-wrap: nowrap;
+                transition: transform 100ms ease-in-out;
             }
             .col-lg-4 {
                 border-right: 1px solid white;
+                &:last-child {
+                    border-right: 0;
+                }
             }
         }
 
@@ -436,9 +441,18 @@ section {
     }
 
     @media screen and (min-width: 992px) {
+        h4 {
+            font-size: 1.5rem;
+        }
         ul {
             flex-direction: row;
             flex-wrap: nowrap;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        h4 {
+            font-size: 1.8rem;
         }
     }
 }

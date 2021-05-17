@@ -250,9 +250,12 @@ section {
 .aktualne .posouvaci-novinky .posouvaci-novinky-obsah {
   overflow: hidden; }
   .aktualne .posouvaci-novinky .posouvaci-novinky-obsah .row {
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    transition: transform 100ms ease-in-out; }
   .aktualne .posouvaci-novinky .posouvaci-novinky-obsah .col-lg-4 {
     border-right: 1px solid white; }
+    .aktualne .posouvaci-novinky .posouvaci-novinky-obsah .col-lg-4:last-child {
+      border-right: 0; }
 
 .aktualne .posouvaci-novinky button {
   background-color: transparent;
@@ -301,9 +304,15 @@ section {
   font-size: 2.3rem; }
 
 @media screen and (min-width: 992px) {
+  .taekwondo h4 {
+    font-size: 1.5rem; }
   .taekwondo ul {
     flex-direction: row;
     flex-wrap: nowrap; } }
+
+@media screen and (min-width: 1200px) {
+  .taekwondo h4 {
+    font-size: 1.8rem; } }
 
 .treninky table {
   margin-bottom: 0; }

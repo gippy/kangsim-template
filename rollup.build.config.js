@@ -1,6 +1,8 @@
 import glob from "glob";
 import path from "path";
 
+import { babel } from '@rollup/plugin-babel';
+
 import autoprefixer from 'autoprefixer';
 import postcss from 'postcss';
 import copy from 'rollup-plugin-copy';
@@ -26,6 +28,7 @@ export default {
         include: 'src/**/*'
     },
     plugins: [
+        babel({ babelHelpers: 'bundled' }),
         scss({
             output: true,
             output: 'docs/main.css',
@@ -45,6 +48,10 @@ export default {
                 },
                 {
                     src: 'src/nejaky-jiny-obsah.html',
+                    dest: 'docs/'
+                },
+                {
+                    src: 'src/dalsi-novinky.html',
                     dest: 'docs/'
                 },
                 {
