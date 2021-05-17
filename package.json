@@ -4,8 +4,8 @@
     "description": "Website template for kangsim.cz",
     "main": "dest/index.html",
     "scripts": {
-        "build": "node_modules/rollup/dist/bin/rollup -c rollup.config.js",
-        "dev": "node_modules/rollup/dist/bin/rollup -c rollup.config.js -w"
+        "build": "node_modules/rollup/dist/bin/rollup -c rollup.build.config.js",
+        "dev": "node_modules/rollup/dist/bin/rollup -c rollup.dev.config.js -w"
     },
     "author": "Jaroslav Hejlek",
     "license": "ISC",
