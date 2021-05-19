@@ -178,10 +178,6 @@ section {
     margin-top: -10rem;
     padding-top: 10rem;
     display: inline-block; }
-  @media screen and (min-width: 992px) {
-    section h1 a, section h2 a {
-      margin-top: -1rem;
-      padding-top: 1rem; } }
   section h2 {
     font-size: 3.2rem;
     margin-bottom: 2rem; }
